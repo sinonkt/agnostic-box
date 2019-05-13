@@ -23,7 +23,9 @@ RUN yum -y update && \
       lua \
       lua-devel \
       lua-posix \
-      fish
+      fish && \
+      yum clean all && \
+      rm -rf /var/cache/yum/*
 
 RUN mkdir -p /usr/local/bin
 
