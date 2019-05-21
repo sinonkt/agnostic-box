@@ -23,6 +23,7 @@ RUN yum -y update && \
       lua \
       lua-devel \
       lua-posix \
+      python-setuptools \
       fish && \
       yum clean all && \
       rm -rf /var/cache/yum/*
